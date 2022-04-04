@@ -1,14 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_testing/screens/favorites.dart';
+import 'package:flutter_testing/screens/details.dart';
+import 'package:flutter_testing/screens/main.dart';
 import 'package:flutter_testing/screens/home.dart';
 import 'package:provider/provider.dart';
 
 import 'models/favorites.dart';
 
 void main() {
-  runApp(TestingApp());
-}
+  runApp(
+      TestingApp()
+  );
 
+
+}
 class TestingApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -21,10 +25,9 @@ class TestingApp extends StatelessWidget {
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
         routes: {
-          HomePage.routeName: (context) => HomePage(),
-          FavoritesPage.routeName: (context) => FavoritesPage(),
+          MainPage.routeName: (context) => MainPage(),
         },
-        initialRoute: HomePage.routeName,
+        initialRoute: MainPage.routeName,
       ),
     );
   }
