@@ -108,11 +108,11 @@ class _AddsScreenState extends State<AddsScreen> {
                 Container(
                   decoration:  BoxDecoration(
                     color: Colors.greenAccent,
-                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                    borderRadius: BorderRadius.all(Radius.circular(15)),
                   ),
                  child: Center(
                    child: Padding(
-                     padding: EdgeInsets.all(3),
+                     padding: EdgeInsets.only(top: 3, bottom: 3, right: 10, left: 10),
                      child: Icon(Icons.assignment_outlined, color: Colors.white,),
                    ),
                  ),
@@ -121,11 +121,11 @@ class _AddsScreenState extends State<AddsScreen> {
                 Container(
                   decoration:  BoxDecoration(
                     color: Colors.red,
-                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                    borderRadius: BorderRadius.all(Radius.circular(15)),
                   ),
                   child: Center(
                     child: Padding(
-                      padding: EdgeInsets.all(3),
+                      padding: EdgeInsets.only(top: 3, bottom: 3, right: 10, left: 10),
                       child: Icon(Icons.delete, color: Colors.white,),
                     ),
                   ),
