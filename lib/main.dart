@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_testing/screens/MyAdds.dart';
 import 'package:flutter_testing/screens/details.dart';
+import 'package:flutter_testing/screens/following_list.dart';
 import 'package:flutter_testing/screens/main.dart';
 import 'package:flutter_testing/screens/home.dart';
 import 'package:provider/provider.dart';
@@ -26,9 +27,9 @@ class TestingApp extends StatelessWidget {
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
         routes: {
-          AddsScreen.routeName: (context) => AddsScreen(),
+          FollowingList.routeName: (context) => FollowingList(),
         },
-        initialRoute: AddsScreen.routeName,
+        initialRoute: FollowingList.routeName,
       ),
     );
   }
