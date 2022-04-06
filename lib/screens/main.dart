@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_testing/models/favorites.dart';
 import 'package:flutter_testing/screens/details.dart';
 import 'package:flutter_testing/screens/drawer.dart';
+import 'package:flutter_testing/screens/wish_list.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -29,9 +30,9 @@ class _MainPageState extends State<MainPage> {
 
   List pages = [
     HomePage(),
+    WishListScreen(),
     HomePage(),
-    HomePage(),
-    HomePage()
+    WishListScreen()
   ];
 
   @override

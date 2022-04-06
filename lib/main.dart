@@ -27,9 +27,9 @@ class TestingApp extends StatelessWidget {
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
         routes: {
-          FollowingList.routeName: (context) => FollowingList(),
+          MainPage.routeName: (context) => MainPage(),
         },
-        initialRoute: FollowingList.routeName,
+        initialRoute: MainPage.routeName,
       ),
     );
   }
