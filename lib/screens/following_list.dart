@@ -19,7 +19,7 @@ class _FollowingListState extends State<FollowingList> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: bold16Text('Favorite List', color: Colors.greenAccent),
+        title: bold16Text('Following List', color: Colors.greenAccent),
         centerTitle: true,
         backgroundColor: Colors.white,
         leading:  Row(
