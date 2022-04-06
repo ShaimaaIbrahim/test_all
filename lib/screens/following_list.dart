@@ -1,4 +1,5 @@
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'home.dart';
@@ -78,18 +79,23 @@ class _FollowingListState extends State<FollowingList> {
   }
   _followingListItem(){
      return ListTile(
-       leading: ClipRRect(
-         borderRadius: BorderRadius.circular(20),
-         child: CachedNetworkImage(
-           imageUrl: 'https://img.freepik.com/free-photo/wai'
-               'st-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dresse'
-               'd-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self'
-               '-confident-man-freelancer_273609-16320.jpg?t=st=1649014586~exp=1649015186~hmac'
-               '=f3a9dce45a5216993cd0c89d474be064de38e915d0b1bf45f115fb15b994d715',
-           fit: BoxFit.contain,
+       leading: CachedNetworkImage(
+         imageUrl: 'https://img.freepik.com/free-photo/wai'
+             'st-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dresse'
+             'd-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self'
+             '-confident-man-freelancer_273609-16320.jpg?t=st=1649014586~exp=1649015186~hmac'
+             '=f3a9dce45a5216993cd0c89d474be064de38e915d0b1bf45f115fb15b994d715',
+         imageBuilder: (context, imageProvider) => Container(
            width: 70,
            height: 100,
+           decoration: BoxDecoration(
+             borderRadius: BorderRadius.circular(20),
+             border: Border.all(color: Colors.green, width: 1),
+             image: DecorationImage(
+                 image: imageProvider, fit: BoxFit.cover),
+           ),
          ),
+
        ),
        title: bold16Text('Mahmoud Aboelmagd'),
        subtitle: _buildTextWithIcon('Geddah',),
