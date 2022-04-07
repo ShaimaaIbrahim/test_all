@@ -8,6 +8,7 @@ import 'package:provider/provider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'add_advertisment.dart';
 import 'home.dart';
 
 class MainPage extends StatefulWidget {
@@ -23,7 +24,7 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage> {
 
-  bool visible = true;
+  bool visible = false;
   final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
 
   int currentIndex=0;
@@ -32,7 +33,7 @@ class _MainPageState extends State<MainPage> {
     HomePage(),
     WishListScreen(),
     HomePage(),
-    WishListScreen()
+    AddAdvertisment()
   ];
 
   @override
