@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_testing/screens/home.dart';
+import 'package:flutter_testing/screens/pages/sections_page.dart';
 
 class AddAdvertisment extends StatefulWidget {
   static String routeName = "/";
@@ -15,9 +16,7 @@ class _AddAdvertismentState extends State<AddAdvertisment> {
   PageController controller = PageController();
 
   List<Widget> _list = <Widget>[
-    Center(
-      child: bold16Text('1'),
-    ),
+    SectionsPage(),
     Center(
       child: bold16Text('2'),
     ),
@@ -39,9 +38,9 @@ class _AddAdvertismentState extends State<AddAdvertisment> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: MediaQuery.of(context).size.width,
-      height: MediaQuery.of(context).size.height,
+     // height: MediaQuery.of(context).size.height,
       child: Padding(
         padding: EdgeInsets.all(10),
         child: Column(
@@ -62,6 +61,7 @@ class _AddAdvertismentState extends State<AddAdvertisment> {
             ),
             heightSpace(10),
             _list[currentPage],
+           // heightSpace(30),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [

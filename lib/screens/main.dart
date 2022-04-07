@@ -135,6 +135,7 @@ class _MainPageState extends State<MainPage> {
               child: Stack(
                 children: [
                   Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
