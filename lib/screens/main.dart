@@ -39,6 +39,12 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        drawer: Drawer(
+            backgroundColor: Colors.white.withOpacity(0.0),
+            child: const DrawerHeader(
+              child:   DrawerWidget()
+            )
+        ),
         bottomNavigationBar: SizedBox(
             height: 50,
             child: Row(
@@ -173,7 +179,6 @@ class _MainPageState extends State<MainPage> {
   }
   _buildProfileInfo() {
     return Column(
-
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Row(
@@ -181,9 +186,7 @@ class _MainPageState extends State<MainPage> {
           children: [
             InkWell(
               onTap: (){
-                setState(() {
-                  visible = !visible;
-                });
+                _scaffoldKey.currentState!.openDrawer();
               },
               child: Icon(
                 Icons.filter_list_rounded,
