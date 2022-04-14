@@ -4,6 +4,7 @@ import 'package:flutter_testing/models/favorites.dart';
 import 'package:flutter_testing/screens/details.dart';
 import 'package:flutter_testing/screens/drawer.dart';
 import 'package:flutter_testing/screens/pages/pictures_page.dart';
+import 'package:flutter_testing/screens/verification_screen.dart';
 import 'package:flutter_testing/screens/wish_list.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/cupertino.dart';
@@ -151,12 +152,17 @@ class _MainPageState extends State<MainPage> {
                           _buildProfileInfo(),
                           Image.asset(''),
                           const Icon(Icons.notifications, color: Colors.green,),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              bold16Text('EN'),
-                              const Icon(Icons.language, color: Colors.green,)
-                            ],
+                          InkWell(
+                            onTap: (){
+                              Navigator.of(context).push(MaterialPageRoute(builder: (c)=>VerificationScreen()));
+                            },
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+                                bold16Text('EN'),
+                                const Icon(Icons.language, color: Colors.green,)
+                              ],
+                            ),
                           )
                         ],
                       ),
