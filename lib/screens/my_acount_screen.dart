@@ -40,7 +40,12 @@ class _MyAccountScreenState extends State<MyAccountScreen> {
                        backgroundImage: NetworkImage('https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?t=st=1649014586~exp=1649015186~hmac=f3a9dce45a5216993cd0c89d474be064de38e915d0b1bf45f115fb15b994d715'),
                        radius: 40,
                      ),
-                   ): Image.file(File(imageFile!.path)),
+                   ):Center(
+                     child: CircleAvatar(
+                     backgroundImage: FileImage(File(imageFile!.path)),
+                     radius: 40,
+                 ),
+                   ),
                    heightSpace(5),
                    InkWell(
                      onTap: (){
