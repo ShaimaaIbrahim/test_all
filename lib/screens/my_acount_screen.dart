@@ -44,7 +44,7 @@ class _MyAccountScreenState extends State<MyAccountScreen> {
                    heightSpace(5),
                    InkWell(
                      onTap: (){
-
+                       _showChoiceDialog(context);
                      },
                      child: Row(
                        mainAxisAlignment: MainAxisAlignment.center,
