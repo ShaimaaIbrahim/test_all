@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_testing/screens/details.dart';
 import 'package:flutter_testing/screens/home.dart';
 import 'package:flutter_testing/screens/pages/details-page.dart';
+import 'package:flutter_testing/screens/pages/pictures_page.dart';
 import 'package:flutter_testing/screens/pages/sections_page.dart';
 
 class AddAdvertisment extends StatefulWidget {
@@ -22,9 +23,7 @@ class _AddAdvertismentState extends State<AddAdvertisment> {
     Center(
       child: bold16Text('2'),
     ),
-    Center(
-      child: bold16Text('3'),
-    ),
+    PicturesPage(),
     DetailsPage(),
     Center(
       child: bold16Text('5'),

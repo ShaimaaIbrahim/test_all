@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_testing/models/favorites.dart';
 import 'package:flutter_testing/screens/details.dart';
 import 'package:flutter_testing/screens/drawer.dart';
+import 'package:flutter_testing/screens/pages/pictures_page.dart';
 import 'package:flutter_testing/screens/wish_list.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/cupertino.dart';

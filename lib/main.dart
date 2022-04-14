@@ -1,13 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_testing/screens/MyAdds.dart';
-import 'package:flutter_testing/screens/add_advertisment.dart';
-import 'package:flutter_testing/screens/details.dart';
-import 'package:flutter_testing/screens/following_list.dart';
 import 'package:flutter_testing/screens/main.dart';
-import 'package:flutter_testing/screens/home.dart';
 import 'package:provider/provider.dart';
-
 import 'models/favorites.dart';
+
 
 void main() {
   runApp(

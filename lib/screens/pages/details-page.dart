@@ -16,8 +16,7 @@ class _DetailsPageState extends State<DetailsPage> {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.only(top: 20, right: 30, left: 30),
-      child: Container(
-      child:  Column(
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           _buildLabelText('Location'),
@@ -57,7 +56,6 @@ class _DetailsPageState extends State<DetailsPage> {
           StyledTextField(height: 200,),
           heightSpace(10),
         ],
-      ),
       ),
     );
   }
